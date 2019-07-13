@@ -1,9 +1,14 @@
 #write your code here
 
-def countdown(integer)
-  while integer > 0
-    puts "#{integer} SECOND(S)!"
-    integer -= 1
+def countdown(n)
+  while n > 0
+    puts "#{n} SECOND(S)!"
+    n -= 1
   end
   "HAPPY NEW YEAR!"
+end
+
+def countdown_with_sleep(n)
+  countdown(n)
+  sleep(1.second)
 end
